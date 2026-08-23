@@ -1,0 +1,13 @@
+streamlit
+python-dotenv
+langchain~=0.3.27
+langchain-community~=0.3.0
+langchain-text-splitters
+langchain-huggingface
+langchain-groq
+langchain-openai
+langchain-google-genai
+pypdf
+faiss-cpu
+sentence-transformers
+groq
