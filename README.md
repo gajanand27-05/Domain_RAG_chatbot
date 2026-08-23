@@ -186,6 +186,14 @@ What it checks automatically:
 | Page correctness | top-1 chunk page matches `expected_page` |
 | Response time | retrieval latency per question (embedding + FAISS search) |
 
+For a full end-to-end run (retrieval + live LLM answer for every row, with
+automatic retrieval-source and refusal checks):
+
+```bash
+python tests/run_llm_evaluation.py            # all 20 questions
+python tests/run_llm_evaluation.py 3,10,12    # or specific rows
+```
+
 What you grade manually while watching the app (the harness prints each
 `expected_answer` next to the retrieved context):
 
