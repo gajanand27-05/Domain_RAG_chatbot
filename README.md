@@ -81,7 +81,7 @@ matter which model backs the answers:
 
 ```
 LLMProvider (abstract base)
-├── GroqProvider      (ChatGroq,            e.g. llama-3.3-70b-versatile)
+├── GroqProvider      (ChatGroq,            e.g. openai/gpt-oss-120b)
 ├── GeminiProvider    (ChatGoogleGenerativeAI, e.g. gemini-2.0-flash)
 ├── OpenAIProvider    (ChatOpenAI,          e.g. gpt-4o-mini)
 └── LocalProvider     (ChatOpenAI pointed at an OpenAI-compatible local
@@ -202,7 +202,7 @@ What you grade manually while watching the app (the harness prints each
 |---|---|---|
 | `LLM_PROVIDER` | `groq` | `groq` / `gemini` / `openai` / `local` |
 | `GROQ_API_KEY` / `GEMINI_API_KEY` / `OPENAI_API_KEY` | — | API key for the selected provider |
-| `GROQ_MODEL_NAME` | `llama-3.3-70b-versatile` | model name (per provider) |
+| `GROQ_MODEL_NAME` | `openai/gpt-oss-120b` | model name (per provider) |
 | `LOCAL_BASE_URL` | `http://localhost:11434/v1` | local OpenAI-compatible endpoint |
 | `LOCAL_MODEL_NAME` | `llama3.1:8b` | local model name |
 | `EMBEDDING_MODEL` | `sentence-transformers/all-MiniLM-L6-v2` | sentence-transformers model |

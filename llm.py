@@ -84,7 +84,7 @@ def _check_api_key(name, hint):
 
 class GroqProvider(LLMProvider):
     name = "groq"
-    default_model = "llama-3.3-70b-versatile"
+    default_model = "openai/gpt-oss-120b"
 
     def _validate_config(self):
         return _check_api_key("GROQ_API_KEY", "Keys are free at https://console.groq.com")
